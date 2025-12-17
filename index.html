@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BaySpray – Urban Spray Paint Supply</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Permanent+Marker&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+
+
+  <header class="site-header">
+    <div class="logo">
+      <img src="img/logo.png" alt="BaySpray Logo" class="logo-img">
+    </div>
+
+    <nav class="main-nav">
+      <a href="#shop">Shop</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#newsletter">Newsletter</a>
+      <a href="#about">About</a>
+    </nav>
+
+    <button class="menu-toggle" aria-label="Open menu">
+      ☰
+    </button>
+  </header>
+
+
+  <section class="hero">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <h1 class="hero-title">BaySpray</h1>
+      <p class="hero-tagline">
+        Premium spray paint built for tunnels, trains and legal walls across the Bay.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#shop" class="btn btn-primary">Shop Cans</a>
+        <a href="#gallery" class="btn btn-outline">View Walls</a>
+      </div>
+    </div>
+  </section>
+
+  <main>
+
+    <section id="shop" class="section shop">
+      <header class="section-header">
+        <h2 class="section-title">Shop</h2>
+        <p class="section-subtitle">
+          High-pressure cans, neon fills and chrome finishes for anyone.
+        </p>
+      </header>
+
+      <div class="product-grid">
+        <article class="product-card">
+          <img src="img/can2.png" class="product-img" alt="Castro Colorway spray can">
+          <h3 class="product-name">Castro Colorway</h3>
+          <p class="product-copy">
+            Four-can neon set for punches of color that pop off concrete and any Muni.
+          </p>
+        </article>
+
+        <article class="product-card">
+          <img src="img/can1.png" class="product-img" alt="Muni Bomber spray can">
+          <h3 class="product-name">Muni Bomber</h3>
+          <p class="product-copy">
+            High-pressure paint curated for any surface.
+          </p>
+        </article>
+
+        <article class="product-card">
+          <img src="img/can3.png" class="product-img" alt="Fog City Chromes spray can">
+          <h3 class="product-name">Fog City Chromes</h3>
+          <p class="product-copy">
+            Chrome set with black and red detail cans for metallic flare.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="gallery" class="section gallery">
+      <header class="section-header">
+        <h2 class="section-title">Gallery</h2>
+        <p class="section-subtitle">
+          Walls around San Francisco painted by BaySpray.
+        </p>
+      </header>
+
+      <div class="gallery-grid">
+        <img src="img/wall2.png" class="gallery-img" alt="Graffiti wall 1">
+        <img src="img/wall3.png" class="gallery-img" alt="Graffiti wall 2">
+        <img src="img/wall4.png" class="gallery-img" alt="Graffiti wall 3">
+        <img src="img/wall5.png" class="gallery-img" alt="Graffiti wall 4">
+      </div>
+    </section>
+
+    <section id="newsletter" class="section newsletter">
+      <header class="section-header">
+        <h2 class="section-title">Newsletter</h2>
+        <p class="section-subtitle">Sign up to get late-night paint alerts.</p>
+      </header>
+
+      <form class="newsletter-form">
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="you@baycity.com" required>
+        <button type="submit" class="btn btn-primary">Join the List</button>
+      </form>
+    </section>
+
+
+    <section id="about" class="section about">
+      <header class="section-header">
+        <h2 class="section-title">About BaySpray</h2>
+      </header>
+
+      <div class="about-layout">
+        <div class="about-text">
+          <p>
+            BaySpray is a San-Francisco-born spray paint label designed for writers, muralists and
+            street artists who need color that survives fog, sun and salt air.
+          </p>
+          <p>
+            Our cans are built with low-drip valves, high-pigment formulas and a range of caps so
+            you can switch from razor-sharp outlines to fat fills without changing brands.
+          </p>
+          <p>
+            BaySpray was created by a 19-year-old girl currently enrolled at San Francisco State
+            University. She always felt that San Francisco's tough weather was never kind to any
+            paint, so she decided to create her own brand specializing in difficult conditions.
+          </p>
+        </div>
+
+        <div class="about-image-wrapper">
+          <img src="img/IMG_5540.jpg" alt="BaySpray founder and work" class="about-img">
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> BaySpray. All rights reserved.</p>
+    <p class="page-mark">Miana Page</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
